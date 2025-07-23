@@ -25,3 +25,10 @@ def multa_autoestrada(velocidade):
         return 120
     else:
         return 60
+    
+def menu():
+    print("\n Menu de Tipos de Via ")
+    print("1. Localidade")
+    print("2. Fora da localidade")
+    print("3. Autoestrada")
+    print("0. Sair")
