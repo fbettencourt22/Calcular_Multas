@@ -15,3 +15,13 @@ def multa_fora_localidade(velocidade):
         return 120
     else:
         return 60
+    
+def multa_autoestrada(velocidade):
+    if velocidade <= 120:
+        return 0
+    elif velocidade > 175:
+        return 360
+    elif velocidade > 150:
+        return 120
+    else:
+        return 60
