@@ -7,7 +7,8 @@ def multa_localidade(velocidade):
         return 120
     else:
         return 60
-    
+
+
 def multa_fora_localidade(velocidade):
     if velocidade <= 90:
         return 0
@@ -15,7 +16,8 @@ def multa_fora_localidade(velocidade):
         return 120
     else:
         return 60
-    
+
+
 def multa_autoestrada(velocidade):
     if velocidade <= 120:
         return 0
@@ -25,14 +27,16 @@ def multa_autoestrada(velocidade):
         return 120
     else:
         return 60
-    
+
+
 def menu():
     print("\n Menu de Tipos de Via ")
     print("1. Localidade")
     print("2. Fora da localidade")
     print("3. Autoestrada")
     print("0. Sair")
-    
+
+
 def main():
     while True:
         menu()
@@ -62,6 +66,7 @@ def main():
             print("Não há multa a pagar.")
         else:
             print(f"Multa a pagar: {multa}€")
+
 
 if __name__ == "__main__":
     main()
